@@ -6,7 +6,7 @@ if not LocalizationManager then return end
 --code base thanks to hejoro
 --imfdb (Most Weapons)
 --Payday Wikia (Leupold/Theia Scope)
---DMC, /k/-anon, and Steam friends (Other unidentified attachments and weapons not ID'd by the two above sources)
+--/k/-anon and Steam friends (Other unidentified attachments and weapons I haven't found or were not ID'd by the two above sources)
 LocalizationManager_text = LocalizationManager_text or LocalizationManager.text
 function LocalizationManager:text( string_id, macros )
     local realnames = {}
