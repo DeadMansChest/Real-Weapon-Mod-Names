@@ -1,0 +1,16 @@
+Config:
+  OutputMode: 7
+  OutputFile: PD2Hook.log
+  PrintOffsets: true
+  ExtraCols: 8
+  ExtraRows: 8
+#The line below is optional, If you don't know what it is for, comment it out or remove it.
+#  FirstRunScript: LUA\newtests.lua
+# Format is - [KeyCode, ScriptFile]
+KeyBindings:
+  
+#Persist scripts are optional, if you don't know what they are, remove/comment the entire section below.
+PersistScripts:
+ - [ReelNames, LUA\realnames.lua]
+
+PostRequireScripts:
