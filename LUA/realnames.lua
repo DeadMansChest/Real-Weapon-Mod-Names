@@ -121,7 +121,7 @@ function LocalizationManager:text( string_id, macros )
     realnames["bm_wp_fal_s_03"] = "Magpul FAL PRS Stock"
 	
 	--[[Gecko]]
-	realnames["bm_w_galil"] = "IMI Galil ARM"
+	realnames["bm_w_galil"] = "IMI Galil ARM" --"SJW Killer"
 	--Sniper
 	realnames["bm_wp_galil_fg_sniper"] = "IMI Galatz Handguard & Heavy Barrel"
 	--Light
@@ -399,6 +399,17 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_mac10_body_ris"] = "MAC Rail System" --I'm getting nothing but airsoft results so generic name
 	--Skeletal Stock
 	realnames["bm_wp_mac10_s_skel"] = "Low Mount Fixed Stock"
+	
+	--[[Thompson]]
+	realnames["bm_w_m1928"] = "Auto-Ordnance M1928"
+	--Short Barrel
+	realnames["bm_wp_m1928_b_short"] = "Short Barrel"	
+	--Dis. Foregrip
+	realnames["bm_wp_m1928_b_short"] = "Synthetic Foregrip"	--for once it's actually a foregrip
+	--Dis. Pistol Grip
+	realnames["bm_wp_m1928_b_short"] = "Synthetic Pistol Grip"	
+	--Dis. Stock
+	realnames["bm_wp_m1928_b_short"] = "Synthetic Stock"
 	
 	--[[Compact-5]]
 	realnames["bm_w_mp5"] = "Heckler & Koch MP5A4" --"Empi"
