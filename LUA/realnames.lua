@@ -405,11 +405,11 @@ function LocalizationManager:text( string_id, macros )
 	--Short Barrel
 	realnames["bm_wp_m1928_b_short"] = "Short Barrel"	
 	--Dis. Foregrip
-	realnames["bm_wp_m1928_b_short"] = "Synthetic Foregrip"	--for once it's actually a foregrip
+	realnames["bm_wp_m1928_fg_discrete"] = "Synthetic Foregrip"	--for once it's actually a foregrip
 	--Dis. Pistol Grip
-	realnames["bm_wp_m1928_b_short"] = "Synthetic Pistol Grip"	
+	realnames["bm_wp_m1928_g_discrete"] = "Synthetic Pistol Grip"	
 	--Dis. Stock
-	realnames["bm_wp_m1928_b_short"] = "Synthetic Stock"
+	realnames["bm_wp_m1928_s_discrete"] = "Synthetic Stock"
 	
 	--[[Compact-5]]
 	realnames["bm_w_mp5"] = "Heckler & Koch MP5A4" --"Empi"
