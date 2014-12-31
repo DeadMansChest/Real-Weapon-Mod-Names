@@ -41,6 +41,13 @@ function LocalizationManager:text( string_id, macros )
 	--Retro Grip
 	realnames["bm_wp_famas_g_retro"] = "G2 Guard"
 	
+	--[[JAM]]
+	realnames["bm_w_l85a2"] = "BAE L85A2" --"Eru"
+	realnames["bm_wp_l85a2_b_long"] = "Long Barrel"
+	realnames["bm_wp_l85a2_b_short"] = "Short Barrel"
+	realnames["bm_wp_l85a2_g_worn"] = "Taped Pistol Grip"
+	realnames["bm_wp_l85a2_fg_short"] = "Daniel Defence L85 Quad Rail"
+	
 	--[[AK.762]]
 	realnames["bm_w_akm"] = "Concern Kalashnikov AKMS"
 	
@@ -60,7 +67,7 @@ function LocalizationManager:text( string_id, macros )
 	--Abraham
 	realnames["bm_wp_m14_body_ebr"] = "MK.14 Kit"
 	--Seid ihr das Essen? Nein, wir sind der Jaeger! (watch better anime)
-	realnames["bm_wp_m14_body_jae"] = "M14 JAE Stock"
+	realnames["bm_wp_m14_body_jae"] = "M14 JAE Kit"
 	
 	--[[AK5]]
 	realnames["bm_w_ak5"] = "Bofors AK5" --"FNC's sexy swedish cousin"
@@ -220,9 +227,9 @@ function LocalizationManager:text( string_id, macros )
 	--[[RAVEN]]
 	realnames["bm_w_ksg"] = "Kel-Tec KSG" --"Kel-Tec Crap"
 	--Long Barrel
-	realnames["bm_wp_ksg_b_long"] = "Long Barrel w/ Extended Tubes"
+	realnames["bm_wp_ksg_b_long"] = "Long Barrel w/ Extended Tube Magazines"
 	--Short Barrel
-	realnames["bm_wp_ksg_b_short"] = "Patrol Barrel w/ Short Tubes"
+	realnames["bm_wp_ksg_b_short"] = "Patrol Barrel w/ Short Tube Magazines"
 	
 	--[[WHY DON'T YOU TAKE A SEAT OVER THERE?]]
 	realnames["bm_w_spas12"] = "Franchi SPAS-12"
@@ -394,7 +401,7 @@ function LocalizationManager:text( string_id, macros )
 	--[[Mark-10]]
 	realnames["bm_w_mac10"] = "Ingram M10" --"Emten"
 	--Extended Mag
-	realnames["bm_wp_mac10_m_extended"] = "30rnd Magazine"
+	realnames["bm_wp_mac10_m_extended"] = "M10 Extended Magazine"
 	--Railed Handguard
 	realnames["bm_wp_mac10_body_ris"] = "MAC Rail System" --I'm getting nothing but airsoft results so generic name
 	--Skeletal Stock
@@ -546,8 +553,8 @@ function LocalizationManager:text( string_id, macros )
 	
 	realnames["bm_wp_upg_ns_meatgrinder"] = "Tenderizer Muzzle Device"
 	
-	--Stubby **Don't know
-	--realnames["bm_wp_upg_ns_ass_smg_stubby"] = "Stubby Compensator"
+	--Stubby
+	realnames["bm_wp_upg_ns_ass_smg_stubby"] = "Stinger Flash-Hider" --Based on the VFC Stinger's pseudo flash-hider
 	--Tank **Don't know, could quite literally be a tank compensator
 	realnames["bm_wp_upg_ns_ass_smg_tank"] = "Tank Compensator"
 	--Firebreather
@@ -568,7 +575,7 @@ function LocalizationManager:text( string_id, macros )
 	--Tactical
 	realnames["bm_wp_m4_s_pts"] = "Magpul PTS Stock"
 	--Folding
-	realnames["bm_wp_m4_uupg_s_fold"] = "LR300 Stock"
+	realnames["bm_wp_m4_uupg_s_fold"] = "LR300 Folding Stock"
 	--Wide
 	realnames["bm_wp_upg_m4_s_crane"] = "NSWC Crane Stock"
 	--War-Torn
@@ -579,7 +586,7 @@ function LocalizationManager:text( string_id, macros )
 	--Folding Stock (sidefolder)
 	realnames["bm_wp_ak_s_skfoldable"] = "Folding AK Stock"
 	--Wooden Sniper Stock
-	realnames["bm_wp_ak_s_psl"] = "PSL Stock"
+	realnames["bm_wp_ak_s_psl"] = "PSL Thumbhole Stock"
 	
 	--Ergo (Glocks)
 	realnames["bm_wp_g18c_g_ergo"] = "Hogue Handall Grip Sleeve"
@@ -617,6 +624,8 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_m4_uupg_m_std"] = "STANAG Standard Magazine"	
 	--Tactical Mag
 	realnames["bm_wp_m4_m_pmag"] = "Magpul PMAG Magazine"
+	--Expert Mag
+	realnames["bm_wp_l85a2_m_emag"] = "Magpul EMAG Magazine"
 	--CAR Quad
 	realnames["bm_wp_upg_m4_m_quad"] = "Surefire Quadstack Magazine"
 	--AK Quad
