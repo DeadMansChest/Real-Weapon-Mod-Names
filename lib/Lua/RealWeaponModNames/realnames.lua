@@ -1,4 +1,6 @@
-if not DMCWO.Stop_Standalone then
+io.stdout:write("\n[RWMN] realnames.lua...")
+
+if not _G.DMCWO then
 
 --Real Weapon Names
 --code base thanks to hejoro
@@ -9,11 +11,11 @@ LocalizationManager_text = LocalizationManager_text or LocalizationManager.text
 function LocalizationManager:text( string_id, macros )
     local realnames = {}
 	
-	--Uncomment the below line if you want Wick's name to be shortened
+	--Uncomment the line below if you want Wick's name to be shortened
 	--realnames["menu_jowi"] = "Wick"
 	
 	--[[GOLD SLAVSHIT]]
-	realnames["bm_w_akm_gold"] = "Golden Concern Kalashnikov AKMS"
+	realnames["bm_w_akm_gold"] = "Gold Plated AKMS"
 	
 	--[[JAM733]]
 	realnames["bm_w_amcar"] = "Colt M733 Commando"
@@ -744,5 +746,11 @@ function LocalizationManager:text( string_id, macros )
     if realnames[string_id] then return realnames[string_id] end
     return LocalizationManager_text(self, string_id, macros)
 end
+
+io.stdout:write("is working!", "\n")
+
+else
+
+io.stdout:write("has been disabled as you're running DMCWO", "\n")
 
 end
