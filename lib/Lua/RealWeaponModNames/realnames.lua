@@ -1,18 +1,28 @@
 io.stdout:write("\n[RWMN] realnames.lua...")
 
-if not _G.DMCWO then
-
---Real Weapon Names
---code base thanks to hejoro
---imfdb (Most Weapons)
---Payday Wikia (Leupold/Theia Scope)
---/k/-anon and Steam friends (Other unidentified attachments and weapons I haven't found or were not ID'd by the two above sources)
+if DMCWO == nil then
+--[[
+Real Weapon Names
+-code base thanks to hejoro
+-imfdb (Most Weapons)
+-Payday Wikia (Leupold/Theia Scope)
+-/k/anon and Steam friends (Other unidentified attachments and weapons I haven't found or were not ID'd by the two above sources)
+	-Comrade Sniper for the MOE SL Handguard
+]]
 LocalizationManager_text = LocalizationManager_text or LocalizationManager.text
 function LocalizationManager:text( string_id, macros )
     local realnames = {}
 	
 	--Uncomment the line below if you want Wick's name to be shortened
 	--realnames["menu_jowi"] = "Wick"
+	
+	--[[BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT]]
+	realnames["bm_w_m134"] = "GE M134"
+	realnames["bm_wp_m134_barrel_extreme"] = "Anti-Air Barrel"
+	realnames["bm_wp_m134_barrel_short"] = "Compact Barrel"
+	
+	--[[WE TERRORIST NAO]]
+	realnames["bm_w_rpg7"] = "Bazalt RPG-7"
 	
 	--[[GOLD SLAVSHIT]]
 	realnames["bm_w_akm_gold"] = "Gold Plated AKMS"
@@ -393,9 +403,9 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_p226_b_long"] = "Brushed Metal Long Slide"
 	
 	--[[LEO]]
-	realnames["bm_w_hs2000"] = "HS Produkt HS2000"
+	realnames["bm_w_hs2000"] = "Springfield Armory XD(M)-40" --Fuck the texture labels, it's a XD(M)
 	--Extended Mag
-	realnames["bm_wp_hs2000_m_extended"] = "XD-40 Extended Magazine"
+	realnames["bm_wp_hs2000_m_extended"] = "XD(M)-40 Extended Magazine"
 	--Custom Slide
 	realnames["bm_wp_hs2000_sl_custom"] = "Compensated Slide"
 	--Long Slide
@@ -412,6 +422,11 @@ function LocalizationManager:text( string_id, macros )
 	--20rnd Mag
 	realnames["bm_wp_c96_m_extended"] = "C96 Extended Magazine"
 
+	--[[EVENFASTERRUNONSENTENCES]]
+	realnames["bm_w_cobray"] = "Cobray M11/9"
+	realnames["bm_wp_cobray_ns_barrelext"] = "MAC Barrel Extension"
+	realnames["bm_wp_cobray_ns_silencer"] = "SIONICS Suppressor"
+	
 	--[[RUNONSENTENCES]]
 	realnames["bm_w_mac10"] = "Ingram M10" --"Emten"
 	--Extended Mag
@@ -515,8 +530,51 @@ function LocalizationManager:text( string_id, macros )
 	--[[DEMOMAN]]
 	realnames["bm_w_gre_m79"] = "Springfield Armory M79"
 	
+	
+	--[[WEAPON MODS]]
+	
+	--AK Crab Rail
+	realnames["bm_wp_upg_ak_fg_krebs"] = "Krebs UFM Keymod System Handguard"
+	--AK Keymod Rail
+	realnames["bm_wp_upg_ak_fg_trax"] = "Strike Industries TRAX Handguard"
+	--AK Aluminum Grip
+	realnames["bm_wp_upg_ak_g_rk3"] = "ZenitCo PK-3 Pistol Grip"
+	--AK Aluminum Foregrip
+	realnames["bm_wp_upg_ak_fg_zenit"] = "ZenitCo Handguard"
+	--Scope Mount
+	realnames["bm_wp_upg_o_ak_scopemount"] = "K-VAR KV-04S Optic Mount"
+	--Low Drag Magazine
+	realnames["bm_wp_upg_ak_m_uspalm"] = "US PALM AK30 Magazine"
+	--PBS Suppressor
+	realnames["bm_wp_upg_ns_ass_pbs1"] = "PBS-1 Suppressor"
+	--DMR Kit
+	realnames["bm_wp_upg_ass_ak_b_zastava"] = "Zastava M76 Barrel"
+	--Modern Barrel
+	realnames["bm_wp_upg_ak_b_ak105"] = "AK-105 Barrel"
+	
+	
 	--Exotique Receiver
 	realnames["bm_wp_m4_upper_reciever_edge"] = "VLTOR Upper Receiver"
+	
+	realnames["bm_wp_upg_ass_m4_upper_reciever_ballos"] = "Ballos Upper Receiver" --????
+	
+	realnames["bm_wp_upg_ass_m4_upper_reciever_core"] = "CORE15 Upper Receiver"
+	
+	realnames["bm_wp_upg_ass_m4_lower_reciever_core"] = "CORE15 Lower Receiver"
+	
+	realnames["bm_wp_upg_m4_s_ubr"] = "Magpul UBR Stock"
+	
+	realnames["bm_wp_upg_m4_m_l5"] = "Lancer Systems L5 AW Magazine"
+	
+	realnames["bm_wp_upg_smg_olympic_fg_lr300"] = "Short LR300 Handguard"
+	
+	realnames["bm_wp_upg_ass_m16_fg_stag"] = "Stag Arms Model 8T Handguard"
+	
+	realnames["bm_wp_upg_ass_m4_fg_moe"] = "Magpul MOE SL Handguard"
+	
+	realnames["wpn_fps_upg_ass_m4_fg_lvoa"] = "War Sport LVOA Handguard"
+	
+	realnames["bm_wp_upg_ass_m4_b_beowulf"] = "Beowulf Barrel"
 	
 	--Descriptions are gone so I figured I'd change their names to reflect that they're locking the firemode
 	--Single Fire
@@ -565,7 +623,10 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_upg_ns_medium_gem"] = "GemTech Blackside Suppressor"
 	realnames["bm_wp_upg_ns_large_kac"] = "KAC MK.23 Suppressor"
 	
-	realnames["bm_wp_upg_ns_meatgrinder"] = "Tenderizer Muzzle Device"
+	--Shotgun Suppressor
+	realnames["bm_wp_upg_ns_shot_thick"] = "Shotgun Suppressor"
+	
+	realnames["bm_wp_upg_ns_meatgrinder"] = "Standoff Muzzle Device"
 	
 	--Stubby
 	realnames["bm_wp_upg_ns_ass_smg_stubby"] = "Stinger Flash-Hider" --Based on the VFC Stinger's pseudo flash-hider
@@ -728,8 +789,8 @@ function LocalizationManager:text( string_id, macros )
 	
 	realnames["bm_menu_custom"] = "Internal Mod"
 	realnames["bm_menu_extra"] = "Rail"
-	realnames["bm_menu_upper_reciever"] = "Body Mod"
-	realnames["bm_menu_lower_reciever"] = "Body Mod"
+	realnames["bm_menu_upper_reciever"] = "Upper Body Mod"
+	realnames["bm_menu_lower_reciever"] = "Lower Body Mod"
 	realnames["bm_menu_slide"] = "Barrel/Slide"
 	realnames["bm_menu_grip"] = "Pistol Grip"
 	realnames["bm_menu_barrel_ext"] = "Barrel Extension"
@@ -747,10 +808,10 @@ function LocalizationManager:text( string_id, macros )
     return LocalizationManager_text(self, string_id, macros)
 end
 
-io.stdout:write("is working!", "\n")
+io.stdout:write("is working!\n")
 
 else
 
-io.stdout:write("has been disabled as you're running DMCWO", "\n")
+io.stdout:write("has been disabled as you're running DMCWO\n")
 
 end
