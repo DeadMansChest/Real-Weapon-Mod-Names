@@ -239,7 +239,7 @@ function LocalizationManager:text( string_id, macros )
 	--[[870]]
 	realnames["bm_w_r870"] = "Remington Model 870" --"Remafdng"
 	--Extended Mag
-	realnames["bm_wp_r870_m_extended"] = "R870 Extended Tube Magazine (+2 Rounds)"
+	realnames["bm_wp_r870_m_extended"] = "R870 Extended Tube Magazine"
 	--Zombie Hunter
     realnames["bm_wp_r870_fg_wood"] = "Wooden Pump"
 	--Short Enough **don't know
@@ -258,7 +258,7 @@ function LocalizationManager:text( string_id, macros )
 	
 	--[[AA12]]
 	realnames["bm_w_aa12"] = "MPS Auto Assault-12"
-	realnames["bm_wp_aa12_mag_drum"] = "20rnd AA-12 Drum""
+	realnames["bm_wp_aa12_mag_drum"] = "20rnd AA-12 Drum"
 	
 	--[[M1014]]
 	realnames["bm_w_benelli"] = "Benelli M4"
@@ -288,7 +288,7 @@ function LocalizationManager:text( string_id, macros )
 	--[[BABBY 870]]
 	realnames["bm_w_serbu"] = "Short Barrelled Remington Model 870"
 	--Extended Mag
-	realnames["bm_wp_shorty_m_extended_short"] = "R870 Extended Tube Magazine (+1 Round)"
+	realnames["bm_wp_shorty_m_extended_short"] = "R870 Extended Tube Magazine"
 	--Standard
 	realnames["bm_wp_r870_s_solid"] = "Fixed Stock"
 	--Police Shorty
