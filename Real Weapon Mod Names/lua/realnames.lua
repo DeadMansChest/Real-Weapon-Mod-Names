@@ -1,4 +1,3 @@
-if DMCWO == nil then
 --[[
 Real Weapon Names
 -code base thanks to hejoro
@@ -977,6 +976,4 @@ function LocalizationManager:text( string_id, macros )
 	
     if realnames[string_id] then return realnames[string_id] end
     return LocalizationManager_text(self, string_id, macros)
-end
-
 end
