@@ -3,7 +3,7 @@
 	"description" : "Full renaming of the weapons and mods present in PD2"
 	"author" : "DeadMansChest/Noep",
 	"contact" : "id/qt3_14",
-	"version" : "1.61",
+	"version" : "1.62",
 	"priority" : 70,
 	"updates" : [
 		{
