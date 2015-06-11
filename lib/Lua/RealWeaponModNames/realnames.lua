@@ -1,5 +1,3 @@
-io.stdout:write("\n[RWMN] realnames.lua...")
-
 if DMCWO == nil then
 --[[
 Real Weapon Names
@@ -980,10 +978,5 @@ function LocalizationManager:text( string_id, macros )
     if realnames[string_id] then return realnames[string_id] end
     return LocalizationManager_text(self, string_id, macros)
 end
-io.stdout:write("is working!\n")
-
-else
-
-io.stdout:write("has been disabled as you're running DMCWO\n")
 
 end
