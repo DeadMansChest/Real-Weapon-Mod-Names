@@ -60,8 +60,8 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_l85a2_fg_short"] = "Daniel Defence L85 Quad Rail"
 	
 	--[[CROATGAT]]
-	realnames["bm_w_vhs"] = "HS Produkt VHS-2"
-	realnames["bm_wp_vhs_b_short"] = "Short Barrel"
+	realnames["bm_w_vhs"] = "HS Produkt VHS-D2"
+	realnames["bm_wp_vhs_b_short"] = "K2 Barrel"
 	
 	realnames["bm_wp_vhs_b_sniper"] = "Sniper Barrel"
 	
@@ -71,9 +71,9 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_w_akm"] = "Concern Kalashnikov AKMS"
 	
 	--[[MELTGUN]]
-	realnames["bm_w_g36"] = "Heckler & Koch G36C"
+	realnames["bm_w_g36"] = "Heckler & Koch G36KV"
 	--Compact
-	realnames["bm_wp_g36_fg_c"] = "Carbine Handguard"
+	realnames["bm_wp_g36_fg_c"] = "G36c Handguard"
 	--Polizei
 	realnames["bm_wp_g36_fg_ksk"] = "Knights Armament Co. RAS Handguard"  
 	--Solid Stock
@@ -89,39 +89,31 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_m14_body_jae"] = "M14 JAE Kit"
 	
 	--[[SWED]]
-	realnames["bm_w_ak5"] = "Bofors AK5" --"FNC's sexy swedish cousin"
+	realnames["bm_w_ak5"] = "Bofors Ak5" --"FNC's sexy swedish cousin"
 	--Karbin Ceres
-	realnames["bm_wp_ak5_fg_ak5c"] = "AK5c Handguard"
+	realnames["bm_wp_ak5_fg_ak5c"] = "Ak5c Handguard"
 	--Belgian Heat
 	realnames["bm_wp_ak5_fg_fnc"] = "FN FNC Handguard"
 	--Bertil
-	realnames["bm_wp_ak5_s_ak5b"] = "AK5b Stock"
+	realnames["bm_wp_ak5_s_ak5b"] = "Ak5b Stock"
 	--Caesar
-	realnames["bm_wp_ak5_s_ak5c"] = "AK5c Stock"
+	realnames["bm_wp_ak5_s_ak5c"] = "Ak5c Stock"
 	
 	--[[JAM16]]
 	realnames["bm_w_m16"] = "Colt M16A3" --"Orange Slices", "IS THAT A FAMAS?"
-	realnames["bm_w_m16a4"] = "Colt M16A4"
-	--going against imfdb here, simply for the fact the the flat top receiver isn't limited to the A4 and that the AMR bares more resemblence to the A3 (default handguard, automatic fire)
 	--Railed
 	realnames["bm_wp_m16_fg_railed"] = "Daniel Defense Lite Rail" --not a carbon copy, just based off of, if only for the delta ring
 	--Blast to the Past
 	realnames["bm_wp_m16_fg_vietnam"] = "M16A1 Handguard"
 	
 	--[[553 NO PANTSU]]
-	realnames["bm_w_s552"] = "SIG SG 552" --"SG550's Little Sister"
+	realnames["bm_w_s552"] = "SIG SG 552-2" --"SG550's Little Sister"
 	--Enhanced Foregrip
 	realnames["bm_wp_ass_s552_fg_standard_green"] = "OD Green Handguard"
 	--Enhanced Grip
 	realnames["bm_wp_ass_s552_g_standard_green"] = "OD Green Pistol Grip"
 	--Enhanced Stock
-	realnames["bm_wp_ass_s552_s_standard_green"] = "OD Green Stock"	
-	--Enhanced Foregrip
-	realnames["bm_wp_ass_s552_fg_black"] = "Black Handguard"
-	--Enhanced Grip
-	realnames["bm_wp_ass_s552_g_black"] = "Black Pistol Grip"
-	--Enhanced Stock
-	realnames["bm_wp_ass_s552_s_black"] = "Black Stock"
+	realnames["bm_wp_ass_s552_s_standard_green"] = "OD Green Stock"
 	--Railed Foregrip
 	realnames["bm_wp_ass_s552_fg_railed"] = "Railed Handguard" --pretty sure Sig manufactures their own rails for the 552/3. Can't be bothered to look :/
 	--Heat Treated
@@ -254,19 +246,20 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_saiga_m_20rnd"] = "20rnd MD Arms Saiga Drum"
 	
 	--[[AA12]]
-	realnames["bm_w_aa12"] = "MPS Auto Assault-12"
+	realnames["bm_w_aa12"] = "MPS Auto Assault-12 CQB"
 	realnames["bm_wp_aa12_mag_drum"] = "20rnd AA-12 Drum"
+	realnames["bm_wp_aa12_barrel_long"] = "Standard Barrel"
 	
 	--[[M1014]]
 	realnames["bm_w_benelli"] = "Benelli M4"
 	--Long Barrel
 	realnames["bm_wp_ben_b_long"] = "Long Barrel w/7-Shot Tube"
 	--Short Barrel
-	realnames["bm_wp_ben_b_short"] = "NFA Short Barrel w/4-Shot Tube"
+	realnames["bm_wp_ben_b_short"] = "NFA Barrel w/4-Shot Tube"
 	--Collapsed Stock
 	realnames["bm_wp_ben_s_collapsed"] = "M1014 Collapsed Stock"
 	--Solid Stock
-	realnames["bm_wp_ben_fg_standard"] = "M1014 Civilian Stock" --same deal with the FAL, possible conflict
+	realnames["bm_wp_ben_fg_standard"] = "M1014 Solid Stock" --same deal with the FAL, possible conflict
 	
 	--[[KELTEC]]
 	realnames["bm_w_ksg"] = "Kel-Tec KSG"
@@ -285,7 +278,7 @@ function LocalizationManager:text( string_id, macros )
 	--[[BABBY 870]]
 	realnames["bm_w_serbu"] = "Short Barrelled Remington Model 870"
 	--Extended Mag
-	realnames["bm_wp_shorty_m_extended_short"] = "R870 Extended Tube Magazine"
+	realnames["bm_wp_shorty_m_extended_short"] = "Short R870 Extended Tube Magazine"
 	--Standard
 	realnames["bm_wp_r870_s_solid"] = "Fixed Stock"
 	--Police Shorty
@@ -308,7 +301,7 @@ function LocalizationManager:text( string_id, macros )
 	realnames["bm_wp_m249_s_solid"] = "M249 Solid Stock"
 	
 	--[[RELATED TO RAIFU]]
-	realnames["bm_w_hk21"] = "Heckler & Koch HK21" --"Related to mai raifu"
+	realnames["bm_w_hk21"] = "Heckler & Koch HK21E" --"Related to mai raifu"
 	--Short Foregrip
 	realnames["bm_wp_hk21_fg_short"] = "HK21 Short Handguard"
 	realnames["bm_wp_hk21_g_ergo"] = "HK21 Ergo Grip"
@@ -318,7 +311,7 @@ function LocalizationManager:text( string_id, macros )
 	--Light Barrel
 	realnames["bm_wp_mg42_b_mg34"] = "Maschinengewehr 34 Barrel"
 	--Heat Sink (Star Wars)
-	realnames["bm_wp_mg42_b_vg38"] = "DLT-19 Barrel"
+	realnames["bm_wp_mg42_b_vg38"] = "BlasTech DLT-19 Barrel"
 	
 	--[[GORDON]]
 	realnames["bm_w_usp"] = "Heckler & Koch USP Tactical"
@@ -526,7 +519,7 @@ function LocalizationManager:text( string_id, macros )
 	
 	realnames["bm_wp_tec9_b_standard"] = "AB-10 Barrel"
 	
-	realnames["bm_wp_tec9_ns_ext"] = "TEC-9 Barrel Extension"
+	realnames["bm_wp_tec9_ns_ext"] = "TEC-9 Pseudo Barrel Extension"
 	
 	realnames["bm_wp_tec9_s_unfolded"] = "Interdynamic MP-9 Wire Stock"
 	
@@ -537,7 +530,7 @@ function LocalizationManager:text( string_id, macros )
 	--Supp. Barrel
 	realnames["bm_wp_sterling_b_suppressed"] = "L34A1 Barrel"
 	--Heat Sink Barrel
-	realnames["bm_wp_sterling_b_e11"] = "E-11 Barrel"
+	realnames["bm_wp_sterling_b_e11"] = "BlasTech E-11 Barrel"
 	--10rnd Mag
 	realnames["bm_wp_sterling_m_short"] = "10rnd L2A1 Magazine"
 	--34rnd Mag
@@ -602,12 +595,45 @@ function LocalizationManager:text( string_id, macros )
 	--[[TAGUSO]]
 	realnames["bm_w_mateba"] = "Mateba 2006M"
 	--Long
-	realnames["bm_wp_2006m_b_long"] = "Stampede Barrel"
+	realnames["bm_wp_2006m_b_long"] = "Major Barrel"
 	--Med
-	realnames["bm_wp_2006m_b_medium"] = "Medium Barrel"
+	realnames["bm_wp_2006m_b_medium"] = "Batou Barrel"
 	--Short
-	realnames["bm_wp_2006m_b_short"] = "Ghost Barrel"
+	realnames["bm_wp_2006m_b_short"] = "Togusa Barrel"
 	
+		--AS Val
+	realnames["bm_w_asval"] = "Tula Arms AS \"Val\""
+	--VSS
+	realnames["bm_wp_asval_s_solid"] = "VSS Stock"
+		
+	--SUB 2000
+	realnames["bm_w_sub2000"] = "Kel-Tec SUB-2000"
+	realnames["bm_wp_sub2000_fg_gen2"] = "Gen2 Handguard"
+	realnames["bm_wp_sub2000_fg_railed"] = "Red Lion R6 Handguard"
+	realnames["bm_wp_sub2000_fg_suppressed"] = "Quad Rail Handguard w/Suppressor"
+	
+	--XXX Boner
+	realnames["bm_w_hunter"] = "Avalanche CB1-50 Pistol Grip Crossbow"
+	
+	--2000 crying babies
+	realnames["bm_w_wa2000"] = "Walther WA2000"
+	--Long
+	realnames["bm_wp_wa2000_b_long"] = "Long Barrel"
+	--Supp.
+	realnames["bm_wp_wa2000_b_suppressed"] = "Suppressor"
+	--Light
+	realnames["bm_wp_wa2000_g_light"] = "Lightweight Furniture"
+	--Black
+	realnames["bm_wp_wa2000_g_stealth"] = "Black Furniture"
+	--Walnut
+	realnames["bm_wp_wa2000_g_walnut"] = "Walnut Furniture"
+	
+	--Vector
+	realnames["bm_w_polymer"] = "KRISS Vector SMG"
+	--CRB
+	realnames["bm_wp_polymer_barrel_precision"] = "CRB Barrel w/Shroud"
+	--Supp
+	realnames["bm_wp_polymer_ns_silencer"] = "Defiance HPS 4GSK Suppressor"
 	
 	--[[WEAPON MODS]]
 	--Ported
