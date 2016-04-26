@@ -13,7 +13,7 @@ local testAllStrings = false  --Set to true to show all string ID's, false to re
 function LocalizationManager:text(string_id, ...)
 		
 		--[[BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT]]
-		or string_id == "bm_w_m134" and "General Electric M134"
+		return string_id == "bm_w_m134" and "General Electric M134"
 		or string_id == "bm_w_m134" and "General Electric M134"
 		or string_id == "bm_wp_m134_barrel_extreme" and "Anti-Air Barrel"
 		or string_id == "bm_wp_m134_barrel_short" and "Compact Barrel"
